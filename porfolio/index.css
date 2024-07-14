@@ -1,0 +1,559 @@
+:root{
+    --max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+body {
+    background: #fff6fa;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav__content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #ff347f;
+    transition: 0s;
+}
+
+nav .logo a:hover {
+    color: #ff347f;
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+nav ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0s;
+    color: #ff347f;
+}
+
+nav ul li a:hover {
+    border-top-color: black;
+    border-bottom-color: black;
+    color: black
+}
+
+
+
+
+
+
+/* SECTION */
+
+.section {
+    background-color:#fff6fa;
+}
+
+.section__container {
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+  
+.title span {
+    font-weight: 600;
+    color: #ff347f;
+}
+
+.description {
+    line-height: 1.5rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.action__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.action__buttons button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 2px solid var(--text-color-light);
+    transition: 0s;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.my_resume {
+    background-color: #ec8eb0;
+    border-radius: 20px;
+}
+
+.my_resume:hover {
+    background-color: #e0c9d4;
+    color: #ffffff;
+}
+
+.image {
+    display: grid;
+    place-items: center;
+}
+
+.image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+/* SKILLS */
+.skill_content {
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #fff6fa;
+}
+
+.skill_content h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ec8eb0;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    padding-left: 0px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ec8eb0;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+}
+
+.skill-item img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.skill-item span {
+    font-size: 14px;
+    color: #ec8eb0;
+}
+
+
+
+
+
+/* PROJECTS */
+.projects {
+    padding-top: 150px;
+    padding-left: 20px;
+    background: #fff6fa;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #ec8eb0;
+}
+
+.card_content{
+    display: flex;
+}
+
+.projects .card {
+    background: #f8e7ed;
+    margin: 30px;
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.card .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card .head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card .head .title-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .head .title-link h4 {
+    margin: 0;
+}
+
+.card .head .title-link p {
+    margin: 5px 0px 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    padding-top: 10px;
+}
+
+
+
+
+/* CERTIFICATES */
+.certificates {
+    padding-top: 170px;
+}
+
+.certificates h2{
+    text-align: center;
+    color: #ec8eb0;
+    font-size: 40px;
+}
+
+.certificates .certi_content{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.certificates .card{
+    background: #f8e7ed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 30%;
+    height: 370px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.certificates .card img{
+    margin-left: 100px;
+    width: 50%;
+}
+
+.certificates .card h4{
+    font-size: 25px;
+}
+
+.certificates .card p{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.certificates .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+/* CONTACT */
+
+.contact{
+    padding-top: 100px;
+}
+
+.contact h2{
+    padding-left: 70px;
+    font-size: 40px;
+    color: #ec8eb0;
+}
+.contact p{
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 75px;
+    padding-top: 7px;
+}
+
+.contact .contact_content{
+    display: flex;
+    height: 500px;
+}
+
+.contact .phone {
+    font-size: 25px;
+    padding: 50px 120px 25px;
+}
+
+.contact .email {
+    font-size: 25px;
+    padding: 25px 120px 25px;
+}
+
+.contact .linkedin {
+    font-size: 25px;
+    padding: 25px 120px 50px;
+}
+
+.contact .linkedin a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.send_email .card{
+    background: #f8e7ed;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 70%;
+    height: 470px;
+    padding: 20px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    
+}
+
+.send_email .card h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.send_email .card input{
+    width: 90%;
+    height: 40px;
+    margin: 10px 10px 5px;
+    border: 1px solid gray;
+    background-color: #f8e7ed;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+
+}
+
+.send_email .card textarea{
+    height: 120px;
+    width: 90%;
+    margin: 10px 10px 5px;
+    border: 1px solid gray;
+    background-color: #f8e7ed;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+}
+
+.send_email .card button{
+    width: 130px;
+    height: 50px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ec8eb0;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.send_email .card button:hover{
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #e0c9d4;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+footer .icons{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+@media (width<750px){
+    nav .checkbox{
+        display: block;
+    }
+
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        top: 85px;
+        left: -100%;
+        flex-direction: column;
+        background-color: #e0c9d4;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+    }
+
+    .section__container {
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
+        grid-area: 1/1/2/2;
+    }
+
+    .action__buttons{
+        margin: auto;
+    }
+
+    .skill_content {
+        padding: 10px;
+    }
+
+    .skills-grid {
+        justify-content: center;
+    }
+
+    .skill-item {
+        width: 80px;
+    }
+
+
+    .projects .card{
+        grid-template-rows: repeat(1, 1fr);
+
+    }
+    footer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer .icons {
+        font-size: 20px;
+    }
+}

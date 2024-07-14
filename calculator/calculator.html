@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- STYLES -->
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        .calculator{
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 140px;
+            background-color: #455d7a;
+        }
+
+        .cal_content{
+            height: 400px;
+            width: 600px;
+            padding: 50px 50px 50px ;
+            background-color: #f95959;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 30px;
+        }
+
+        .cal_content input{
+            width: 100%;
+            height: 130px;
+            margin-bottom: 25px;
+            border: none;
+            border-radius: 20px;
+            background-color:#e3e3e3;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 40px;
+        }
+
+        .cal_content .btns button{
+            height: 55px;
+            width: 142px;
+            padding: 20px 20px 20px;
+            margin: 4px 2px 2px;  
+            font-size: 30px; 
+            border-radius: 10px;
+            border: none;
+            text-align: right;
+            background-color: #e3e3e3;
+
+        }
+        .cal_content .btns button:hover{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="calculator">
+        <div class="cal_content">
+            <input type="text" id="result" readonly>
+            <div class="btns" id="btns">
+                    <button type="submit" value="7" onclick="displayValue('7')">7</button>
+                    <button type="submit" value="8" onclick="displayValue('8')">8</button>
+                    <button type="submit" value="9" onclick="displayValue('9')">9</button>
+                    <button type="submit" value="+" onclick="displayValue('+')">+</button>
+                    <button type="submit" value="4" onclick="displayValue('4')">4</button>
+                    <button type="submit" value="5" onclick="displayValue('5')">5</button>
+                    <button type="submit" value="6" onclick="displayValue('6')">6</button>
+                    <button type="submit" value="-" onclick="displayValue('-')">-</button>
+                    <button type="submit" value="1" onclick="displayValue('1')">1</button>
+                    <button type="submit" value="2" onclick="displayValue('2')">2</button>
+                    <button type="submit" value="3" onclick="displayValue('3')">3</button>
+                    <button type="submit" value="x" onclick="displayValue('*')">x</button>
+                    <button type="submit" value="0" onclick="displayValue('0')">0</button>
+                    <button type="submit" value="=" onclick="solve()">=</button>
+                    <button type="submit" value="C" onclick="clearDisplay()">AC</button>
+                    <button type="submit" value="/" onclick="displayValue('/')">/</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        function displayValue(value) {
+            document.getElementById('result').value += value;
+        }
+
+        function solve() {
+            let expression = document.getElementById('result').value;
+            try {
+                let result = eval(expression);
+                document.getElementById('result').value = result;
+            } catch (error) {
+                document.getElementById('result').value = 'Error';
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById('result').value = '';
+        }
+
+    </script>
+</body>
+</html>

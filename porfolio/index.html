@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="#">Mahak</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label> 
+            <input type="checkbox" name="check" id="check" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certi">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- HOME -->
+    <section class="section">
+        <div class="section__container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Mahak Chauhan<br /></span> a Computer Science Student
+                </h1>
+                <p class="description">
+                    Organised and dependable candidate willing to enhance professional skills , capabilities and knowledge in an organisation which recognises the value of hard work and trusts me with responsibilities and challenges.
+                </p>
+                <div class="action__buttons">
+                    <button class="my_resume" onclick="location.href='docs/resume.pdf';">Download Resume</button>
+                </div>
+                
+            </div>
+            <div class="image">
+                <img src="assests/profile.jpg" alt="profile" />
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- SKILLS -->
+    <div id="skills">
+        <section class="skill_content">
+            <h2>Skills</h2>
+            <div class="skills-section">
+                <div class="skills-category">
+                    <h3>Programming Language</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./assests/cpp.png" alt="CPP">
+                            <span>CPP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./assests/html.png" alt="ReactJS">
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/react.png" alt="ReactJS">
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/js.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/css.png" alt="CSS">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./assests/node.png" alt="NodeJS">
+                            <span>NodeJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/restapi.png" alt="restapi">
+                            <span>Rest API</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assests/postgres.png" alt="postgres">
+                            <span>Postgres</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- PROJECTS -->
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="card_content">
+            <div class="card">
+                <div class="head">
+                    <img src="./assests/gitlogo.png" alt="gitlogo">
+                    <div class="title-link">
+                        <h4>Blogging Website</h4>
+                        <p><a href="https://github.com/bellabaxter/full-stack-blogging">Project link</a></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>A fullstack blogging website using ReactJS, NodeJS, Express and Postgres Database with functionalities like posting, editing, deleting along with user authentications.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <img src="./assests/gitlogo.png" alt="gitlogo">
+                    <div class="title-link">
+                        <h4>Service Provider</h4>
+                        <p><a href="https://github.com/bellabaxter/service-provider">Project link</a></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>MEAN STACK based project with functionalities like adding a provider, deleting and updating along with user authentications.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="head">
+                    <img src="./assests/gitlogo.png" alt="gitlogo">
+                    <div class="title-link">
+                        <h4>Landing Page</h4>
+                        <p><a href="https://github.com/bellabaxter/full-stack-blogging">Project link</a></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>Landing page using HTML5 and CSS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- CERTIFICTES -->
+    <div class="certificates" id="certi">
+        <h2>Certificates</h2>
+        <div class="certi_content">
+            <div class="card">
+                <img src="./assests/udemy.png" alt="">
+                <h4>The Complete 2024 Web Development Bootcamp</h4>
+                <p>Full stack web dev course</p>
+            </div>
+            <div class="card">
+                <img src="./assests/unnamed.webp" alt="">
+                <h4>Full Stack Development from LERNX</h4>
+                <p>Full stack web dev course</p>
+            </div>
+            <div class="card">
+                <img src="./assests/gs.jpg" alt="">
+                <h4>Software Engineering Job Simulation</h4>
+                <p>FORAGE</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>I would love to work with you.</p>
+        <div class="contact_content">
+            <div class="info">
+                <div class="phone">
+                    <i class="ri-smartphone-line"></i> +91 9004023685
+                </div>
+                <div class="email">
+                    <i class="ri-mail-line"></i>  mahakchauhan473@gmail.com
+                </div>
+                <div class="linkedin">
+                    <i class="ri-linkedin-fill"></i><a href="https://www.linkedin.com/in/mahak-chauhan-a2837b24a/"> LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="send_email">
+                <div class="card">
+                    <h4>Send me an email <i class="ri-mail-fill"></i></h4>
+                    <form>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="num">Phone No.</label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="m"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright © 2024 <br/>
+        </p>
+        <div class="icons">
+            <i class="ri-linkedin-box-fill"></i>
+            <i class="ri-github-fill"></i>
+            <i class="ri-google-fill"></i>
+        </div>
+    </footer>
+</body>
+</html>
